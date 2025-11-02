@@ -1,20 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
 
-*{
-    font-family: 'Bitcount Grid Single';
-    font-size: 36px;
-    background-color: #1A3D64;
+* {
+  box-sizing: border-box;
 }
 
-.main{
-    height: 60vh;
-    width: 60vh;
-    align-self: center;
-    justify-self: center;
-    border: black 2px solid;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+body {
+  background-color: #1A3D64;
+  color: white;
+  font-family: 'Bitcount Grid Single', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#divMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  border: 2px solid white;
+  width: 60vmin;
+  height: 60vmin;
+  background-color: #153255;
+}
+
+.square {
+  border: 1px solid #2c4d7a;
+  aspect-ratio: 1 / 1;
+  flex-grow: 1;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
